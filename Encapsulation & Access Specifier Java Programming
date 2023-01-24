@@ -1,0 +1,31 @@
+class a{
+    private  int anu = 10;
+    int aditya=100;
+}
+
+public class Main extends a {
+    public static void main(String[] args) {
+        Main ob1 = new Main();
+        System.out.println(ob1.aditya);
+    }
+}
+
+
+
+class q1{
+    private  int a=10;
+    public int b=90;
+    protected int c=80;
+    int d=45;
+}
+
+public class Main2 extends q1{
+    public static void main(String[] args){
+     Main2 ob1=new Main2();
+        System.out.println(ob1.a);
+        System.out.println(ob1.b);
+     System.out.println(ob1.c);
+     System.out.println(ob1.d);
+    }
+}
+
