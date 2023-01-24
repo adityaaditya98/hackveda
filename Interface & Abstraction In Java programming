@@ -1,0 +1,55 @@
+interface printable{
+    void print();
+}
+interface showable{
+    void show();
+}
+class A7 implements printable,showable{
+    public void print(){
+        System.out.println("hello");
+    }
+
+    public void show() {
+        System.out.println("welcome");
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        A7 obj = new A7();
+        obj.print();
+        obj.show();
+    }
+}
+
+////////////////
+
+interface bank{
+    float rateofIntereset();
+}
+class A7 implements bank{
+public float rateofIntereset(){
+
+    return 9.7f;
+}
+}
+
+class sb implements bank{
+    public float rateofIntereset(){
+
+        return 9.15f;
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        bank obj = new A7();
+        bank obj1 = new sb();
+        System.out.println(obj.rateofIntereset());
+        System.out.println(obj1.rateofIntereset());
+    }
+}
