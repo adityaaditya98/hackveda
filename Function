@@ -1,0 +1,19 @@
+class Main {
+    String name;
+    int rollno;
+    int age;
+
+    void info(){
+        System.out.println(name);
+        System.out.println(rollno);
+        System.out.println(age);
+
+    }
+    public static void main(String[] args) {
+        Main student = new Main();
+        student.name = "aditya";
+        student.rollno = 253;
+        student.age =21;
+        student.info();
+    }
+}
