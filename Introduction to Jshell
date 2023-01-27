@@ -1,0 +1,84 @@
+
+C:\Users\rockz>jshell
+|  Welcome to JShell -- Version 19.0.2
+|  For an introduction type: /help intro
+
+jshell> System.out.println("hello")
+hello
+
+jshell> int x=45
+x ==> 45
+
+jshell> System.out.println(x);
+45
+
+jshell> String s = "aditya";
+s ==> "aditya"
+
+jshell> System.out.println(s);
+aditya
+
+
+jshell> 1+1
+$10 ==> 2
+
+jshell> 2
+$11 ==> 2
+
+jshell> 1
+$12 ==> 1
+
+jshell> 3
+$13 ==> 3
+
+jshell> /exit
+|  Goodbye
+
+C:\Users\rockz>jshell
+|  Welcome to JShell -- Version 19.0.2
+|  For an introduction type: /help intro
+
+
+jshell> String twice(String s){
+   ...> return s+s;}
+|  created method twice(String)
+
+jshell> twice("sea")
+$2 ==> "seasea"
+|  created scratch variable $2 : String
+
+jshell> System.out.println(twice("sea"))
+seasea
+
+
+jshell> /vars
+|    String $2 = "seasea"
+
+jshell> /methods
+|    String twice(String)
+
+jshell> /list
+
+   1 : String twice(String s){
+       return s+s;}
+   2 : twice("sea")
+   3 : System.out.println(twice("sea"))
+
+jshell> /list -all
+
+  s1 : import java.io.*;
+  s2 : import java.math.*;
+  s3 : import java.net.*;
+  s4 : import java.nio.file.*;
+  s5 : import java.util.*;
+  s6 : import java.util.concurrent.*;
+  s7 : import java.util.function.*;
+  s8 : import java.util.prefs.*;
+  s9 : import java.util.regex.*;
+ s10 : import java.util.stream.*;
+  e1 : String twice(String s)
+       return s+s;
+   1 : String twice(String s){
+       return s+s;}
+   2 : twice("sea")
+   3 : System.out.println(twice("sea"))
