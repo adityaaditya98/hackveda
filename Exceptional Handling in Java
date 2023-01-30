@@ -1,1 +1,39 @@
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Max Heart Rate Calculator");
+        System.out.println("please enter your age: ");
+        int age = sc.nextInt();
+        int maxheartrate = 220-age;
+
+        System.out.println(("Max Heart rate is : "+maxheartrate));
+
+    }
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Max Heart Rate Calculator");
+        System.out.println("please enter your age: ");
+        int age = sc.nextInt();
+        int maxheartrate = 220-age;
+
+        System.out.println(("Max Heart rate is : "+maxheartrate));
+        }
+        catch (InputMismatchException e){
+            System.out.println("Please enter integer value");
+        }
+    }
+}
