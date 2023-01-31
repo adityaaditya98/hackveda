@@ -1,0 +1,61 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Max Heart Rate Calculator");
+        System.out.println("please enter your age: ");
+        int age = sc.nextInt();
+        int maxheartrate = 220-age;
+
+        System.out.println(("Max Heart rate is : "+maxheartrate));
+        }
+        catch (Exception e){
+            System.out.println("Please enter integer value");
+            System.out.println(e.getMessage());
+            System.out.println(e.getLocalizedMessage());
+        }
+//        catch (InputMismatchException e){
+//            System.out.println("Please enter integer value");
+//            System.out.println(e.getMessage());
+//            System.out.println(e.getLocalizedMessage());
+//        }
+    }
+}
+
+
+//////////////////////////////////////////////////////
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter no 1:");
+            int a = sc.nextInt();
+            System.out.println("enter no 2:");
+            int b = sc.nextInt();
+            int ans = (add(a, b));
+            System.out.println(ans);
+        } catch (InputMismatchException e){
+            System.out.println("incorrect Input");
+        }
+    }
+    private static int add(int a,int b){
+        int c=0;
+        try{
+            c=a+b;
+        }catch (Exception e){
+            System.out.println("Please enter the Integer only");
+        }finally {
+            System.out.println("finaly executed");
+            System.out.println("Result: "+c);
+            return c;
+        }
+    }
+}
