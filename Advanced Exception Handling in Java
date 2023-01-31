@@ -59,3 +59,75 @@ public class Main {
         }
     }
 }
+
+////////////////////////////////////////////////////////////
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter your age: ");
+        int age = sc.nextInt();
+        try {
+            if (age <= 0) {
+                throw new NumberFormatException();
+            } else if (age > 120) {
+                throw new NumberFormatException();
+            }
+        }
+        catch (IOError e){
+            System.out.println("error");
+        }
+        catch (NumberFormatException e){
+            System.out.println("error1");
+        }
+        System.out.println("Max Heart Rate is: "+(220-age));
+
+    }
+}
+///////////////////////////////////////////////
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Please enter your height in cms: ");
+            float height = sc.nextFloat();
+            double idealWeight = 50 + (0.91 * (height - 152.4));
+            System.out.println("My Ideal Weight is : " + idealWeight);
+        } catch (InputMismatchException e){
+            throw new NumberFormatException();
+        }
+    }
+}
+
+////////////////////////////////////////////////
+
+import java.io.IOError;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter your age: ");
+        int age = sc.nextInt();
+        try {
+            if (age <= 0) {
+                throw new NumberFormatException();
+            } else if (age > 120) {
+                throw new NumberFormatException();
+            }
+        }
+        catch (IOError e){
+            System.out.println("error");
+        }
+        catch (NumberFormatException e){
+            System.out.println("error1");
+        }
+        System.out.println("Max Heart Rate is: "+(220-age));
+
+    }
+}
+
