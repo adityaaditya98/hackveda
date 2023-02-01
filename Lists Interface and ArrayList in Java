@@ -139,4 +139,40 @@ public class Main implements List<String>{
     }
 /////////////////////////////////////////////////////////////
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        List<Integer> arr = Collections.synchronizedList(new ArrayList<>());
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        System.out.println(arr.remove(2));
+        System.out.println(arr);
+    }
+}
+///////////////////////////////////////////////////////////////////////
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(0,1);
+        arr.add(1,2);
+        arr.add(2,3);
+        arr.add(3,4);
+        arr.add(4,5);
+        arr.add(5,6);
+        arr.add(6,7);
+        System.out.println(arr);
+    }
+}
