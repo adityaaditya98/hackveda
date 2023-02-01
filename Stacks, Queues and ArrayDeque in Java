@@ -1,0 +1,40 @@
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+        Stack instack = new Stack();
+        System.out.println("is stack empty:"+instack.empty());
+        instack.push(10);
+        instack.push(20);
+        System.out.println(instack.peek());
+        System.out.println(instack.contains(20));
+        System.out.println(instack.search(10));
+        System.out.println(instack.pop());
+        System.out.println(instack.peek());
+    }
+}
+/////////////////////////////////////////////////////////////////////////
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayDeque<String> deque = new ArrayDeque<>();
+        deque.add("aditya");
+        deque.addFirst("lastname :");
+        deque.addLast("boddu");
+        System.out.println(deque.getFirst());
+        System.out.println(deque.getLast());
+        System.out.println(deque.contains("boddu"));
+        System.out.println("///////////////////////////");
+        deque.offerFirst("salman");
+        deque.offer("sharukh");
+        Iterator<String> name =deque.iterator();
+
+        while (name.hasNext()){
+            System.out.println(name.next());
+        }
+
+    }
+}
