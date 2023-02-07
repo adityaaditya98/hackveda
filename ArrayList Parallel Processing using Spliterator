@@ -18,3 +18,50 @@ public class Main {
 }
 //////////////////////////////////////////////
 
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> fbPosts = new ArrayList<>();
+        fbPosts.add(10);
+        fbPosts.add(20);
+        fbPosts.add(50);
+
+        Spliterator<Integer> spliterator = fbPosts.spliterator();
+        System.out.println("Estimated size of date :" + spliterator.estimateSize());
+        System.out.println("Estimated size of date :" + spliterator.getExactSizeIfKnown());
+        spliterator.forEachRemaining(System.out::println);
+        System.out.println("Estimated size of date :" + spliterator.estimateSize());
+        System.out.println("Estimated size of date :" + spliterator.getExactSizeIfKnown());
+
+
+    }
+}
+
+////////////////////////////////////////
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> fbPosts = new ArrayList<>();
+        fbPosts.add(10);
+        fbPosts.add(20);
+        fbPosts.add(50);
+
+        Spliterator<Integer> spliterator = fbPosts.spliterator();
+        Spliterator<Integer> spliterator2 = spliterator.trySplit();
+
+        System.out.println("spl1 Estimated size of date :" + spliterator.estimateSize());
+        System.out.println("spl1 Estimated size of date :" + spliterator.getExactSizeIfKnown());
+        spliterator.forEachRemaining(System.out::println);
+        System.out.println("Estimated size of date :" + spliterator.estimateSize());
+        System.out.println("Estimated size of date :" + spliterator.getExactSizeIfKnown());
+        System.out.println("///////////////////////");
+        System.out.println("spl2 Estimated size of date :" + spliterator2.estimateSize());
+        System.out.println("spl2 Estimated size of date :" + spliterator2.getExactSizeIfKnown());
+
+        spliterator2.forEachRemaining(System.out::println);
+
+        System.out.println("spl2 Estimated size of date :" + spliterator2.estimateSize());
+        System.out.println("spl2 Estimated size of date :" + spliterator2.getExactSizeIfKnown());
+
+
+    }
+}
