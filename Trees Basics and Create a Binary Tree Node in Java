@@ -1,0 +1,15 @@
+
+public class Main {
+    static class Node{
+    int value;
+    Node left,right;
+    Node(int value){
+        this.value=value;
+        left = null;
+        right=null
+    }
+    }
+    public static void main(String[] args) {
+        new Node(10);
+    }
+}
