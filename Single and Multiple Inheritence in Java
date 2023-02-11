@@ -1,0 +1,21 @@
+public class Main {
+    public static int getMaxHearRate(int age){
+        int result=0;
+        result=220-age;
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getMaxHearRate(30));
+    }
+}
+
+public class BMIMachine extends Main{
+    public static int getMaxHearRate(int age){
+        System.out.println("Method Executed from Base CLass:");
+        return 230-age;
+    }
+    public static void main(String[] args){
+        System.out.println(getMaxHearRate(30));
+    }
+}
